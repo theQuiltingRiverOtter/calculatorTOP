@@ -5,57 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <title>TOP Calculator</title>
 </head>
 
 <body>
-    <div id="calculator">
-        <div id="display">
-            <p>53500</p>
+    <div class='columns'>
+        <div class="column"></div>
+        <div class="column has-background-success is-one-fifth mt-6">
+            <div class="box">
+                <p id="display"></p>
+            </div>
+            <div id="first" class='buttons are-medium'>
+                <button id="clear" class='button is-rounded is-light is-primary'>C</button>
+                <button id="sqrt" class='button is-rounded is-light is-info'>&#8730;</button>
+                <button id='square' class='button is-rounded is-light is-info'>X&#178</button>
+                <button class="button is-info is-rounded is-light operators">/</button>
+            </div>
+            <div id="second" class='buttons are-medium'>
+                <button class="button is-info is-rounded numbers">7</button>
+                <button class="button is-info is-rounded numbers">8</button>
+                <button class="button is-info is-rounded numbers">9</button>
+                <button class="button is-info is-light is-rounded operators">X</button>
+            </div>
+            <div id='third' class='buttons are-medium'>
+                <button class="button is-info is-rounded numbers">4</button>
+                <button class="button is-info is-rounded numbers">5</button>
+                <button class="button is-info is-rounded numbers">6</button>
+                <button class="button is-info is-light is-rounded operators">-</button>
+            </div>
+            <div id="fourth" class='buttons are-medium'>
+                <button class="button is-info is-rounded numbers">1</button>
+                <button class="button is-info is-rounded numbers">2</button>
+                <button class="button is-info is-rounded numbers">3</button>
+                <button class="button is-info is-light is-rounded operators">+</button>
+            </div>
+            <div id="fifth" class='buttons are-medium'>
+                <button id='negative' class='button is-info is-light is-rounded numbers'>-</button>
+                <button class="button is-info is-rounded numbers">0</button>
+                <button id="decimal" class="button is-info is-light is-rounded numbers">.</button>
+                <button class="button is-info is-light is-rounded operators">=</button>
+            </div>
         </div>
-        <div id="numbers">
-            <div id="first">
-                <button class='function'>%</button>
-                <button class='function'>CE</button>
-                <button class='function'>C</button>
-                <button class='function'>B</button>
-            </div>
-            <div id="second">
-                <button class='function'>1/x</button>
-                <button class='function'>x^2</button>
-                <button class='function'>sqrt</button>
-                <button class='function' id='divide'>/</button>
-            </div>
-            <div id="third">
-                <button class='number'>7</button>
-                <button class='number'>8</button>
-                <button class='number'>9</button>
-                <button class='function' id='multiply'>X</button>
-            </div>
-            <div id="fourth">
-                <button class='number'>4</button>
-                <button class='number'>5</button>
-                <button class='number'>6</button>
-                <button class='function' id='subtract'>-</button>
-            </div>
-            <div id="fifth">
-                <button class='number'>1</button>
-                <button class='number'>2</button>
-                <button class='number'>3</button>
-                <button class='function' id='add'>+</button>
-            </div>
-            <div id="sixth">
-                <button>+/-</button>
-                <button class='number'>0</button>
-                <button class='function'>.</button>
-                <button class='function' id=evaluate>=</button>
-            </div>
+        <div class="column"></div>
 
-        </div>
 
     </div>
-
 
     <script src='app.js'>   </script>
 </body>
