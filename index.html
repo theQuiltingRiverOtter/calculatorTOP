@@ -5,53 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/cf4e9dc810.js" crossorigin="anonymous"></script>
     <title>TOP Calculator</title>
 </head>
 
 <body>
-    <div class='columns'>
-        <div class="column"></div>
-        <div class="column has-background-success is-one-fifth mt-6">
-            <div class="box">
-                <p id="display"></p>
-            </div>
-            <div id="first" class='buttons are-medium'>
-                <button id="clear" class='button is-rounded is-light is-primary'>C</button>
-                <button id="sqrt" class='button is-rounded is-light is-info'>&#8730;</button>
-                <button id='square' class='button is-rounded is-light is-info'>X&#178</button>
-                <button class="button is-info is-rounded is-light operators">/</button>
-            </div>
-            <div id="second" class='buttons are-medium'>
-                <button class="button is-info is-rounded numbers">7</button>
-                <button class="button is-info is-rounded numbers">8</button>
-                <button class="button is-info is-rounded numbers">9</button>
-                <button class="button is-info is-light is-rounded operators">X</button>
-            </div>
-            <div id='third' class='buttons are-medium'>
-                <button class="button is-info is-rounded numbers">4</button>
-                <button class="button is-info is-rounded numbers">5</button>
-                <button class="button is-info is-rounded numbers">6</button>
-                <button class="button is-info is-light is-rounded operators">-</button>
-            </div>
-            <div id="fourth" class='buttons are-medium'>
-                <button class="button is-info is-rounded numbers">1</button>
-                <button class="button is-info is-rounded numbers">2</button>
-                <button class="button is-info is-rounded numbers">3</button>
-                <button class="button is-info is-light is-rounded operators">+</button>
-            </div>
-            <div id="fifth" class='buttons are-medium'>
-                <button id='negative' class='button is-info is-light is-rounded numbers'>-</button>
-                <button class="button is-info is-rounded numbers">0</button>
-                <button id="decimal" class="button is-info is-light is-rounded numbers">.</button>
-                <button class="button is-info is-light is-rounded operators">=</button>
+    <div class="row">
+        <div id='container' class="col s2 offset-s5">
+            <div class="card blue-grey z-depth-4 darken-1">
+                <div class="card-content">
+                    <div class='card-panel white'>
+                        <p id="display"></p>
+
+                    </div>
+                    <div id="first" class=''>
+                        <button id='delete' class="btn-floating btn-medium waves-effect waves-light teal lighten-3"><i
+                                class="fas fa-backspace"></i></button>
+                        <button id="clear"
+                            class='btn-floating btn-medium waves-effect waves-light teal lighten-3'>C</button>
+                        <button
+                            class='operators btn-floating btn-medium waves-effect waves-light teal lighten-3'>/%</button>
+                        <button id="random" class="btn-floating btn-medium waves-effect waves-light teal lighten-3"><i
+                                class="fas fa-random"></i></button>
+                    </div>
+                    <div id="first2" class=''>
+                        <button id="sqrt"
+                            class='btn-floating btn-medium waves-effect waves-light teal lighten-3'>&#8730;</button>
+                        <button id='square'
+                            class='btn-floating btn-medium waves-effect waves-light teal lighten-3'>X&#178</button>
+                        <button id="powerOf"
+                            class="operators btn-floating btn-medium waves-effect waves-light teal lighten-3">x<sup>y</sup></button>
+                        <button
+                            class="btn-floating btn-medium waves-effect waves-light operators teal lighten-3">/</button>
+                    </div>
+                    <div id="second" class=''>
+                        <button class="numbers btn-floating btn-medium waves-effect waves-light">7</button>
+                        <button class="numbers btn-floating btn-medium waves-effect waves-light">8</button>
+                        <button class="numbers btn-floating btn-medium waves-effect waves-light">9</button>
+                        <button
+                            class="operators btn-floating btn-medium waves-effect waves-light teal lighten-3">X</button>
+                    </div>
+                    <div id='third' class=''>
+                        <button class="numbers btn-floating btn-medium waves-effect waves-light">4</button>
+                        <button class="numbers btn-floating btn-medium waves-effect waves-light">5</button>
+                        <button class="numbers btn-floating btn-medium waves-effect waves-light">6</button>
+                        <button
+                            class="operators btn-floating btn-medium waves-effect waves-light teal lighten-3">-</button>
+                    </div>
+                    <div id="fourth" class=''>
+                        <button class="numbers btn-floating btn-medium waves-effect waves-light">1</button>
+                        <button class="numbers btn-floating btn-medium waves-effect waves-light">2</button>
+                        <button class="numbers btn-floating btn-medium waves-effect waves-light">3</button>
+                        <button
+                            class="operators btn-floating btn-medium waves-effect waves-light teal lighten-3">+</button>
+                    </div>
+                    <div id="fifth" class=''>
+                        <button id='negative'
+                            class='numbers btn-floating btn-medium waves-effect waves-light teal lighten-2'>-</button>
+                        <button class="numbers btn-floating btn-medium waves-effect waves-light">0</button>
+                        <button id="decimal"
+                            class="numbers btn-floating btn-medium waves-effect waves-light teal lighten-2">.</button>
+                        <button
+                            class="operators btn-floating btn-medium waves-effect waves-light teal lighten-3">=</button>
+                    </div>
+
+                </div>
+                <p> Use the number pad for operators. </p>
             </div>
         </div>
-        <div class="column"></div>
-
-
     </div>
+
 
     <script src='app.js'>   </script>
 </body>
